@@ -42,7 +42,7 @@
         #0a0f1a;
     color: #e7ecf5;
     padding-block: 4rem 3.25rem;
-    text-align: center;
+    text-align: left;
 }
 .store-hero--slim { padding-block: 2.5rem 2.25rem; }
 .store-hero--slim .store-hero__subtitle { margin-bottom: 0; }
@@ -57,14 +57,14 @@
     color: #9daac4;
     font-size: 1.08rem;
     max-width: 40rem;
-    margin: 0 auto 1.75rem;
+    margin: 0 0 1.75rem;
 }
 
 /* Big search */
 .store-search {
     display: flex;
     max-width: 40rem;
-    margin: 0 auto;
+    margin: 0;
     background: #ffffff;
     border-radius: 12px;
     padding: .35rem;
@@ -103,7 +103,7 @@
 /* Counters under the search */
 .store-hero__stats {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: .6rem;
     margin: 1.25rem 0 0;
@@ -554,53 +554,8 @@
 .store-spl-card__cta .btn { display: inline-flex; align-items: center; gap: .5rem; }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   CONFIGURATOR — guided 3-step flow
+   CONFIGURATOR
    ══════════════════════════════════════════════════════════════════════════ */
-.store-steps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .35rem;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0 0;
-}
-.store-step {
-    display: inline-flex;
-    align-items: center;
-    gap: .5rem;
-    font-size: .85rem;
-    font-weight: 600;
-    color: #8a97ad;
-    padding: .3rem .6rem;
-}
-.store-step__num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #eef2f8;
-    color: #8a97ad;
-    font-size: .78rem;
-    font-weight: 700;
-}
-.store-step.is-active { color: #0a0f1a; }
-.store-step.is-active .store-step__num { background: #1a73b2; color: #ffffff; }
-.store-step.is-done { color: #1a7f4e; }
-.store-step.is-done .store-step__num { background: #e9f7f1; color: #1a7f4e; }
-.store-step__sep { color: #cfd8e6; }
-/* Steps inside the dark hero */
-.store-hero .store-step { color: #9daac4; }
-.store-hero .store-step__num { background: #1c2538; color: #9daac4; }
-.store-hero .store-step.is-active { color: #ffffff; }
-.store-hero .store-step.is-active .store-step__num { background: #1a73b2; color: #ffffff; }
-.store-hero .store-step.is-done { color: #7ddcae; }
-.store-hero .store-step.is-done .store-step__num { background: rgba(26, 127, 78, .35); color: #7ddcae; }
-.store-hero .store-step__sep { color: #2a3448; }
-
 /* SPL chooser cards */
 .cfg-spl-grid {
     display: grid;
