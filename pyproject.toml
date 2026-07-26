@@ -28,7 +28,7 @@ cli_version = "1.14.0"
 # Preserved across refreshes: description, category, tags, env, and
 # requires.features_manual (dependencies invisible to static analysis).
 [tool.splent.contract]
-description = "skin_store — splent.io storefront look for the marketplace (design tokens + skin.css)"
+description = "splent.io storefront look for the marketplace (design tokens + skin.css)"
 archetype = "config"
 
 [tool.splent.contract.provides]
