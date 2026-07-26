@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=80.3.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "splent_feature_skin_store"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = [
+
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["*.tests", "*.tests.*"]
+
+[tool.splent]
+cli_version = "1.14.0"
+
+# ── Feature Contract (auto-generated) ────────────────────────────────────────
+# Do not edit manually — re-run `splent feature:contract --write` to refresh.
+# Preserved across refreshes: description, category, tags, env, and
+# requires.features_manual (dependencies invisible to static analysis).
+[tool.splent.contract]
+description = "skin_store — splent.io storefront look for the marketplace (design tokens + skin.css)"
+archetype = "config"
+
+[tool.splent.contract.provides]
+routes     = []
+blueprints = []
+models     = []
+commands   = []
+hooks      = ["layout.nav"]
+services   = []
+signals    = []
+translations = []
+docker     = []
+
+[tool.splent.contract.requires]
+features = []
+env_vars = []
+signals  = []
+
+[tool.splent.contract.extensible]
+services  = []
+templates = []
+models    = []
+hooks     = ["layout.nav"]
+routes    = false
