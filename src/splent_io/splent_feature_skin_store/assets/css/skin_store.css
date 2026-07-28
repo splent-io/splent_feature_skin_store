@@ -490,6 +490,13 @@
 .store-meta-row__value .store-pill { font-size: .74rem; }
 .store-ok { color: #1a7f4e; }
 .store-muted { color: #8a97ad; font-weight: 500; }
+.store-warn { color: #b98a00; }
+.store-meta-row--note {
+    display: block;
+    font-size: .82rem;
+    line-height: 1.5;
+    padding-top: .2rem;
+}
 
 /* Alerts */
 .store-alert {
