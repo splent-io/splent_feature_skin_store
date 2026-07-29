@@ -55,9 +55,7 @@ def test_header_shows_log_out_for_authenticated_users(test_client, monkeypatch):
     class _AuthenticatedUser:
         is_authenticated = True
 
-    monkeypatch.setattr(
-        flask_login_utils, "_get_user", lambda: _AuthenticatedUser()
-    )
+    monkeypatch.setattr(flask_login_utils, "_get_user", lambda: _AuthenticatedUser())
     response = test_client.get("/", follow_redirects=True)
     html = response.data.decode("utf-8")
     assert ">Log out</a>" in html
